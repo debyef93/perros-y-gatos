@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Planeta Peludo </title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+    body {
+
+        /*primeros estilos*/
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url('fondito.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat color rgb(35, 35, 114);
+    }
+
+    header {
+        background-color: rgba(99, 101, 192, 0.9);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav {
+        background-color: rgba(99, 101, 192, 0.9);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu li {
+        position: relative;
+        margin: 0 15px;
+    }
+
+    .menu li a {
+        color: rgb(125, 165, 145);
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+    }
+
+    .menu li:hover>a {
+        background-color: #555;
+    }
+
+    /* desplegable */
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #7874b6;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        top: 100%;
+        left: 0;
+        min-width: 150px;
+    }
+
+    .submenu li a {
+        padding: 10px;
+        display: block;
+        color: rgb(76, 177, 168);
+    }
+
+    .submenu li a:hover {
+        background-color: #8d7777;
+    }
+
+    .menu li:hover .submenu {
+        display: block;
+    }
+
+    /*  Secciones Principales  */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .section {
+        flex: 1;
+        margin: 10px;
+        background: rgba(146, 141, 190, 0.781);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .section img {
+        width: 90%;
+        height: 20;
+        border: radius 25px;
+        margin: 10px 0;
+
+    }
+
+    .section a {
+        color: #54399e;
+        text-decoration: none;
+        font-weight: bold;
+        margin: auto;
+    }
+
+    .section a:hover {
+        text-decoration: underline;
+    }
+
+    .section comment {
+        image-orientation: 0grad;
+    }
+
+    /* Loggin para comentar */
+form {
+    text-align: center;
+    margin: 20px;
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+button {
+    background-color: #4723aa;
+    background-position: 0cqmax;
+    color: rgb(125, 165, 145);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+    .section comment {
+        background-color: #1107a1;
+        background-image: -webkit-linear-gradient(90deg, #1107a1 0%, #40681a 100%);
+        background-image: linear-gradient(90deg, #1107a1 0%, #1f0e9d 100%);
+        background-position: -30px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px 0;
+        width: -30%;
+    }
+    .comments-box {
+        border: 5cap solid #9a18c25b;
+        background-color: #c0b7d4;
+        padding: 40px;
+        border-radius: 5%;
+        width: fit-content;        
+        margin-top: 40px;
+        height: 150px;
+     }
+
+     .alternate {
+      box-sizing: border-box;
+    }
+
+    .comment {
+        margin-bottom: 10px;
+        height: fit-content;
+
+    }
+
+    .comment img {
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    /*  Footer  */
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: rgba(99, 101, 192, 0.9);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
+    }
+
+</style>
+<html>
+<header>
+    <h1> Planeta Peludo</h1>
+</header>
+
+<head>
+    <title>¿Comó afecta los medicamentos a los aniamles?</title>
+</head>
+
+<body>
+    <!navegacion-->
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Blog</a>
+                    <ul class="submenu">
+                        <li><a href="Noticias.html">Noticias</a></li>
+                        <li><a href="Veterinarias.html">Veterinarias</a></li>
+                        <li><a href="Cuidados.html">Cuidados</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.de.html">Acerca de</a></li>
+            </ul>
+        </nav>
+        <!lo principal>
+            <div class="container">
+                <div class="section">
+                    <h1>¿Comó afecta los medicamentos a los animales?</h1>
+                    <img src="medicamentos.jpg" alt="Medicamentos">
+                    <p>Los medicamentos son una parte importante en la vida de los animales, ya que estos pueden ser la
+                        diferencia entre la vida y la muerte de una mascota. Sin embargo, es importante tener en cuenta
+                        que los medicamentos también pueden tener efectos secundarios en los animales, por lo que es
+                        importante seguir las indicaciones del veterinario y administrar los medicamentos de forma
+                        adecuada.</p>
+
+                    <img src="nomefio.jpg" alt="No me fio">
+
+                    <p>Recientemente ha saltado a la actualidad un conflicto que llevaba tiempo gestándose entre el
+                        sector veterinario y el Gobierno español, a raíz de una polémica ley que limita el uso de
+                        medicamentos – en particular, antibióticos – que los profesionales veterinarios pueden recetar y
+                        administrar a los animales. Se trata del Real Decreto 666/2023, conocido popularmente como Ley
+                        del Medicamento o Ley de Medicamentos Veterinarios.
+                        <a href="#">Leer más</a>
+
+                        <!crear entradas,apartados,articulos secciones,divisiones-->
+
+                    </p>
+                </div>
+                <div class="section">
+                    <h2>¿Qué es la Ley del Medicamento?</h2>
+                    <img src="miauqueaco.jpg" alt="Ley" width="300" height="200" alt="200" >
+                    <p>La Ley del Medicamento es una normativa que
+                    regula el uso de
+                    medicamentos en los animales, con el
+                    objetivo de proteger la salud de los animales y prevenir la aparición de resistencias
+                    antimicrobianas. La ley establece una serie de restricciones en el uso de medicamentos, en
+                    particular, antibióticos, para evitar su uso indiscriminado y reducir el riesgo de aparición de
+                    resistencias.</p>
+                    <a href="#">Leer más</a>
+
+
+                    <img src="ojodeperri.jpg" alt="Ojo de perri" width="500" height="300">
+                </div>
+
+                <div class="section">
+                    <h3> Caso en España</h3>
+                    <p> En España se han desatado fuertes protestas por parte de profesionales veterinarios y tutores de
+                        mascotas a raíz de la muerte en Galicia de una perra llamada Selva, cuyo tratamiento se vio
+                        frenado
+                        por las restricciones que impone la ley. Por otra parte, en Baleares, un veterinario ha sido
+                        sancionado con una multa de 90.000 euros por haber vendido medicamentos en la consulta sin
+                        atenerse
+                        al procedimiento que marca la normativa. Todo ello ha generado mucha preocupación por parte de
+                        veterinarios y otras personas, que piden que la ley sea derogada o modificada ya que pone en
+                        riesgo
+                        la vida de los animales.</p>
+                    <a href="#">Leer más</a>
+                </div>
+
+                <div class="section">
+                    <h4><b> Comentarios </b> </h4>
+                    <p> Tu opinión importa </p>
+
+                    <form action="submit_comment.php" method="post">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="comment">Comentario:</label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+
+                    <div class="comments-box">
+                        <div class="comment">
+                        <p><img src="jorgito.jpg" alt="Jorgito" width="100" height="150" alt="150"><strong>
+                                Jorgito:</strong> Creo que los medicamentos son esenciales, pero deben usarse con
+                            cuidado.</p>
+                        
+                    </div>
+                    <div class="comment">
+                        <p><strong> <img src="Jaimito.jpg" alt="Jaimito" width="100" height="150"alt="100" >
+                                Jaimito :</strong> Estoy de acuerdo con la ley, es importante evitar el uso
+                            indiscriminado de antibióticos.</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong><img src="juanito.jpg" alt="Juanito" width="100" height="150"alt="100">
+                                Juanito:</strong> La ley debería ser más flexible para casos urgentes como el de
+                            Selva.</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong><img src="kero.jpg" alt="kero" width="100" height="100" alt="100">
+                                Keroo:</strong> Los humanos deberian de pensar más en ayudarnos.</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong><img src="luna.jpg" alt="Luna" width="100" height="150" alt="100">
+                                Luna:</strong>todos necesitamos una sanidad más justa.</p>
+                    </div>
+</div>
+                </div>
+            </div>
+</body>
+
+<footer>
+    <p> Planeta Peludo</p> &copy; 2025</p>
+</footer>
+
+</html>
